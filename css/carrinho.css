@@ -1,0 +1,217 @@
+/* 🔄 Reset e base */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Poppins', 'Segoe UI', sans-serif;
+  background: linear-gradient(135deg, #f0f4ff, #e6f7f1);
+  color: #333;
+  padding: 20px;
+  line-height: 1.6;
+}
+
+/* 🧭 Cabeçalho */
+header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+header h1 {
+  font-size: 34px;
+  color: #2c3e50;
+  margin-bottom: 12px;
+  font-weight: 700;
+}
+
+header a {
+  text-decoration: none;
+  color: #3498db;
+  font-weight: 600;
+  font-size: 16px;
+  transition: color 0.3s ease;
+}
+
+header a:hover {
+  color: #1f5f8a;
+}
+
+/* 🧱 Container do carrinho */
+.carrinho-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* 🧸 Grid de itens */
+.carrinho-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 32px;
+  justify-content: center;
+  margin-top: 25px;
+}
+
+/* 🛍️ Card de item estilo glassmorphism */
+.item-carrinho {
+  width: 280px;
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  border-radius: 18px;
+  padding: 20px;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.08);
+  text-align: center;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.item-carrinho:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 28px rgba(0,0,0,0.12);
+}
+
+.item-carrinho img {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+  border-radius: 12px;
+  margin-bottom: 14px;
+  transition: transform 0.3s ease;
+}
+
+.item-carrinho:hover img {
+  transform: scale(1.05);
+}
+
+.item-carrinho h3 {
+  font-size: 20px;
+  color: #2c3e50;
+  margin-bottom: 8px;
+  font-weight: 600;
+}
+
+.item-carrinho p {
+  font-size: 14px;
+  color: #555;
+  margin-bottom: 8px;
+}
+
+.item-carrinho .avaliacao {
+  font-size: 18px;
+  color: #f1c40f;
+  margin-bottom: 12px;
+}
+
+/* 🔢 Controle de quantidade estilo pill */
+.form-qtd {
+  display: flex;
+  justify-content: center;
+  margin: 14px 0;
+}
+
+.qtd-box {
+  display: flex;
+  align-items: center;
+  border-radius: 50px;
+  overflow: hidden;
+  background: #f0f4ff;
+  border: 1px solid #ddd;
+}
+
+.qtd-box button {
+  width: 40px;
+  height: 40px;
+  font-size: 20px;
+  font-weight: bold;
+  background: linear-gradient(135deg, #3498db, #1f5f8a);
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  transition: transform 0.2s ease, opacity 0.3s ease;
+}
+
+.qtd-box button:hover {
+  transform: scale(1.1);
+  opacity: 0.9;
+}
+
+.qtd-box input {
+  width: 60px;
+  text-align: center;
+  border: none;
+  background: transparent;
+  font-size: 16px;
+  font-weight: bold;
+  color: #2c3e50;
+}
+
+/* ❌ Botão remover */
+.btn-remover {
+  display: inline-block;
+  margin-top: 12px;
+  padding: 10px 16px;
+  background: linear-gradient(135deg, #e74c3c, #c0392b);
+  color: #fff;
+  border-radius: 10px;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: bold;
+  transition: transform 0.2s ease, opacity 0.3s ease;
+}
+
+.btn-remover:hover {
+  transform: scale(1.05);
+  opacity: 0.9;
+}
+
+/* 💰 Total geral estilo painel */
+.total-geral {
+  margin-top: 40px;
+  font-size: 22px;
+  font-weight: bold;
+  color: #27ae60;
+  text-align: center;
+  background: rgba(255, 255, 255, 0.9);
+  backdrop-filter: blur(10px);
+  padding: 20px;
+  border-radius: 16px;
+  display: inline-block;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.08);
+}
+
+/* 🛒 Botão de finalizar compra */
+.btn-finalizar {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 14px 28px;
+  background: linear-gradient(135deg, #27ae60, #1e8449);
+  color: #fff;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 50px;
+  text-decoration: none;
+  transition: transform 0.2s ease, opacity 0.3s ease;
+}
+
+.btn-finalizar:hover {
+  transform: scale(1.05);
+  opacity: 0.9;
+}
+
+/* 📱 Responsivo */
+@media (max-width: 600px) {
+  .item-carrinho {
+    width: 100%;
+  }
+
+  .total-geral {
+    font-size: 18px;
+    padding: 14px;
+  }
+
+  .btn-finalizar {
+    width: 100%;
+    text-align: center;
+  }
+}

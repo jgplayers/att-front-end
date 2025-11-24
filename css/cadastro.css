@@ -1,0 +1,129 @@
+/* 🔄 Reset básico */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, sans-serif;
+  background-color: #f4f6f8;
+  color: #333;
+  padding: 20px;
+  line-height: 1.6;
+}
+
+/* 🧭 Cabeçalho */
+h1 {
+  text-align: center;
+  font-size: 28px;
+  color: #2c3e50;
+  margin-bottom: 20px;
+}
+
+p {
+  text-align: center;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+/* 📑 Seções de formulário */
+.form-section {
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  padding: 20px;
+  margin-bottom: 30px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.06);
+}
+
+.form-section h2 {
+  font-size: 22px;
+  color: #2c3e50;
+  margin-bottom: 15px;
+  border-left: 5px solid #3498db;
+  padding-left: 10px;
+}
+
+/* 📝 Inputs e selects */
+.form-section input[type="text"],
+.form-section input[type="number"],
+.form-section input[type="file"],
+.form-section textarea,
+.form-section select {
+  width: 100%;
+  padding: 10px;
+  font-size: 15px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  margin-bottom: 12px;
+  transition: border-color 0.3s ease;
+}
+
+.form-section input:focus,
+.form-section textarea:focus,
+.form-section select:focus {
+  border-color: #3498db;
+  outline: none;
+}
+
+/* 📸 Prévia da imagem */
+#preview {
+  display: block;
+  max-width: 200px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  margin: 10px 0;
+}
+
+/* 🔘 Botões */
+.form-section button {
+  padding: 10px 18px;
+  background-color: #3498db;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.form-section button:hover {
+  background-color: #2980b9;
+  transform: scale(1.05);
+}
+
+/* 🗑️ Botão excluir */
+form button[name="excluirCategoria"] {
+  background-color: #e74c3c;
+}
+
+form button[name="excluirCategoria"]:hover {
+  background-color: #c0392b;
+}
+
+/* ✏️ Botão atualizar */
+form button[type="submit"]:not([name="excluirCategoria"]) {
+  background-color: #27ae60;
+}
+
+form button[type="submit"]:not([name="excluirCategoria"]):hover {
+  background-color: #1e8449;
+}
+
+/* 📱 Responsivo */
+@media (max-width: 600px) {
+  .form-section {
+    padding: 15px;
+  }
+
+  .form-section h2 {
+    font-size: 20px;
+  }
+
+  .form-section input,
+  .form-section textarea,
+  .form-section select {
+    font-size: 14px;
+  }
+}

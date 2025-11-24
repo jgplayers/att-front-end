@@ -1,0 +1,84 @@
+/* 🔄 Reset básico */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: 'Segoe UI', Tahoma, sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  /* 📦 Container central */
+  .auth-container {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    padding: 30px;
+    width: 100%;
+    max-width: 400px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.06);
+    text-align: center;
+  }
+  
+  /* 🧭 Título */
+  .auth-container h2 {
+    font-size: 24px;
+    color: #2c3e50;
+    margin-bottom: 20px;
+  }
+  
+  /* 🔍 Mensagem de erro */
+  .auth-container p.error {
+    color: #e74c3c;
+    margin-bottom: 10px;
+  }
+  
+  /* ✏️ Formulário */
+  .auth-container form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+  
+  .auth-container input {
+    padding: 10px;
+    font-size: 15px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+  }
+  
+  .auth-container button {
+    padding: 10px;
+    background-color: #2c3e50;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 15px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .auth-container button:hover {
+    background-color: #34495e;
+  }
+  
+  /* 🔗 Links */
+  .auth-container a {
+    display: inline-block;
+    margin-top: 10px;
+    color: #3498db;
+    text-decoration: none;
+    font-size: 14px;
+  }
+  
+  .auth-container a:hover {
+    text-decoration: underline;
+  }
+  

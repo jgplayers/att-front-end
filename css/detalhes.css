@@ -1,0 +1,126 @@
+/* 📦 Container principal */
+.detalhes-container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 30px 20px;
+  }
+  
+  /* 🧱 Box de detalhes */
+  .detalhes-box {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.06);
+    padding: 30px;
+  }
+  
+  /* 🖼️ Imagem do produto */
+  .detalhes-imagem {
+    max-width: 400px;
+    width: 100%;
+    border-radius: 12px;
+    object-fit: cover;
+  }
+  
+  /* 📋 Informações do produto */
+  .detalhes-info {
+    flex: 1;
+    min-width: 280px;
+  }
+  
+  .detalhes-info h2 {
+    font-size: 28px;
+    color: #2c3e50;
+    margin-bottom: 12px;
+  }
+  
+  .detalhes-descricao {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 16px;
+  }
+  
+  .detalhes-avaliacao {
+    font-size: 20px;
+    color: #f1c40f;
+    margin-bottom: 16px;
+  }
+  
+  .detalhes-preco {
+    font-size: 24px;
+    color: #2c3e50;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  /* 🔢 Quantidade */
+  .qtd-box {
+    display: flex;
+    gap: 6px;
+    margin-bottom: 16px;
+  }
+  
+  .qtd-box input {
+    width: 60px;
+    text-align: center;
+    padding: 6px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+  }
+  
+  .qtd-box button {
+    width: 32px;
+    height: 32px;
+    font-size: 18px;
+    font-weight: bold;
+    background-color: #eee;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+  }
+  
+  .qtd-box button:hover {
+    background-color: #ddd;
+  }
+  
+  /* 🛒 Botão de comprar */
+  .btn-comprar {
+    padding: 10px 20px;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-weight: bold;
+    font-size: 15px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .btn-comprar:hover {
+    background-color: #2980b9;
+  }
+  
+  /* 📱 Responsivo */
+  @media (max-width: 600px) {
+    .detalhes-box {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .detalhes-imagem {
+      max-width: 100%;
+    }
+  
+    .detalhes-info {
+      text-align: center;
+    }
+  }
+  .logo-link {
+    text-decoration: none;
+    color: inherit;
+  }
+  
